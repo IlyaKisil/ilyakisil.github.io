@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>MeetMe Personal</title>
+        <title>Welcome</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -19,32 +19,12 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+		<!-- ik css -->
+		<link rel="stylesheet" href="ik/style.css">
 	</head>
     <body>
         
         <!--================Header Menu Area =================-->
-        <!--<header class="header_area">-->
-            <!--<div class="main_menu">-->
-            	<!--<nav class="navbar navbar-expand-lg navbar-light">-->
-					<!--<div class="container box_1620">-->
-						<!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
-						<!--<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>-->
-						<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-							<!--<span class="icon-bar"></span>-->
-							<!--<span class="icon-bar"></span>-->
-							<!--<span class="icon-bar"></span>-->
-						<!--</button>-->
-						<!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
-						<!--<div class="collapse navbar-collapse offset" id="navbarSupportedContent">-->
-							<!--<ul class="nav navbar-nav menu_nav ml-auto">-->
-								<!--<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>-->
-								<!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>-->
-							<!--</ul>-->
-						<!--</div>-->
-					<!--</div>-->
-            	<!--</nav>-->
-            <!--</div>-->
-        <!--</header>-->
 		<div id="header"></div>
         <!--================Header Menu Area =================-->
 
@@ -133,47 +113,104 @@
 
 
         <!--================Ongoing projects Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Ongoing projects</h2>
-        		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-city"></i>
-        					<h4>HOTTBOX</h4>
-        					<p>
-								Python toolbox for tensor decompositions, statistical analysis, visualisation,
-								feature extraction, regression and non-linear classification of multi-dimensional data.
-							</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-skyline"></i>
-        					<h4>Interactive tutorials for multiway analysis</h4>
-        					<p>
-								Introduction into efficient representation of multi-dimensional data,
-								fundamental tensor decompositions with theoretical background.
-							</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-sketch"></i>
-        					<h4>Inns 2019 workshop</h4>
-        					<p>
-								Workshop suitable for the multidisciplinary machine learning and data analytic
-								communities, together with offering the attendees an enhanced experience and a
-								hands-on insight into immediate practical aspects and impact of the tensor technology
-							</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Ongoing projects Area =================-->
+		<section class="feature_area p_120">
+			<div class="container">
+				<div class="main_title">
+					<h2>Ongoing projects</h2>
+				</div>
+				<div class="feature_inner row">
+					<div class="col-lg-4 col-md-6">
+						<div class="flipper-block">
+							<div class="front">
+								<h2>
+									HOTTBOX <br> Python toolbox
+								</h2>
+								<img src="img/logo_hottbox.png" alt="">
+							</div>
+							<div class="back">
+								<p>
+									Python toolbox for tensor decompositions, statistical analysis, visualisation,
+									feature extraction, regression and non-linear classification of multi-dimensional data.
+								</p>
+								<a href="https://github.com/hottbox/hottbox/">
+									<div class="author d-flex">
+										<div class="image mr-3 align-self-center">
+											<img src="img/logo_github.png" alt="">
+										</div>
+										<div class="name align-self-center">
+											Source code on GitHub
+											<span class="position">
+												<img src="https://img.shields.io/pypi/v/hottbox.svg">
+												<img src="https://img.shields.io/travis/hottbox/hottbox/master.svg?label=TravisCI">
+											</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="flipper-block">
+							<div class="front">
+								<h2>
+									HOTTBOX <br> Interactive tutorials
+								</h2>
+								<img src="img/logo_jupyter.png" alt="">
+							</div>
+							<div class="back">
+								<p>
+									Introduction into efficient representation of multi-dimensional data,
+									fundamental tensor decompositions with theoretical background.
+								</p>
+								<a href="https://mybinder.org/v2/gh/hottbox/hottbox-tutorials/master?urlpath=lab/">
+									<div class="author d-flex">
+										<div class="image mr-3 align-self-center">
+											<img src="img/logo_mybinder.png" alt="">
+										</div>
+										<div class="name align-self-center">
+											JupyterLab on Mybinder.org <span class="position">No installation required</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="flipper-block">
+							<div class="front">
+								<h2>
+									INNS BDDL 2019 <br>
+									Workshop
+								</h2>
+								<p>
+									<img src="img/logo_inns_bddl_2019.jpg" alt="">
+								</p>
+							</div>
+							<div class="back">
+								<p>
+									Workshop suitable for the multidisciplinary machine learning and data analytic
+									communities, together with offering the attendees an enhanced experience and a
+									hands-on insight into immediate practical aspects and impact of the tensor technology
+								</p>
+								<a href="https://innsbddl2019.org/tutorial/">
+									<div class="author d-flex">
+										<div class="image mr-3 align-self-center">
+											<img src="img/logo_inns.png" alt="">
+										</div>
+										<div class="name align-self-center">
+											16-18 April 2019 <span class="position">Genoa, Italy</span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================End Ongoing projects Area =================-->
 
 
 
@@ -259,9 +296,8 @@
 
 
 		<!--================Footer Area =================-->
-		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		<!-- Link back to Colorlib can't be removed. -->
 		<div id="footer"></div>
-		<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         <!--================End Footer Area =================-->
 
         
@@ -284,7 +320,8 @@
         <script src="js/mail-script.js"></script>
         <script src="js/theme.js"></script>
 
-
+		<!-- ik functions JS -->
+		<script src="ik/custom.js"></script>
 		<script>
             $(function(){
                 $("#header").load("header.html");

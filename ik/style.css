@@ -1,0 +1,186 @@
+/*==============================================*/
+/*======== Style for the flipper cards ======== */
+/*==============================================*/
+
+.flipper-block {
+    position: relative;
+    margin-bottom: 50px;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.flipper-block, .flipper-block .front, .flipper-block .back {
+    width: 100%;
+    height: 480px;
+    border-radius: 25px;
+}
+
+.flipper-block .front{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+}
+
+.flipper-block .front h2, .flipper-block .front p {
+    color: #f1f9ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.flipper-block .front h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.flipper-block .front p {
+    font-size: 12px;
+}
+
+.flipper-block .front img {
+    max-width: 90%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.flipper-block .back p {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+.flipper-block .back .author {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.flipper-block .author .image {
+    width: 40px;
+}
+
+.flipper-block .author .image img {
+    max-width: 100%;
+}
+
+.flipper-block .author .position {
+    display: block;
+    font-size: 12px;
+}
+
+/*==== Animation part ====*/
+
+.flipper-block:hover .back, .flipper-block.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flipper-block:hover .front, .flipper-block.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipper-block .front, .flipper-block .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flipper-block .front {
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    background-image: -moz-linear-gradient(20deg, #62b9ff 0%, #88f3ff 90%);
+    background-image: -webkit-linear-gradient(20deg, #62b9ff 0%, #88f3ff 90%);
+    background-image: -ms-linear-gradient(20deg, #62b9ff 0%, #88f3ff 90%);
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.flipper-block .front:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 );
+}
+
+.flipper-block .back {
+    background: #fff;
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+@media (max-width: 991.98px) {
+    .flipper-block .back {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    .flipper-block .front {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+/*======== End style for the flipper cards ======== */
